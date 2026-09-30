@@ -6,10 +6,19 @@ use App\Http\Controllers\SubmissionController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\LeaderboardController;
+use App\Http\Controllers\BadgeController;
+use App\Http\Controllers\ResourceController;
 
 Route::middleware('api')->group(function () {
     Route::post('/auth/register', [AuthController::class, 'register']);
     Route::post('/auth/login', [AuthController::class, 'login']);
+
+    Route::get('/badges', [BadgeController::class, 'index']);
+    Route::get('/badges/{badge}', [BadgeController::class, 'show']);
+
+    Route::get('/resources', [ResourceController::class, 'index']);
+    Route::get('/resources/{resource}', [ResourceController::class, 'show']);
+    Route::get('/resources/category/{category}', [ResourceController::class, 'byCategory']);
 
     Route::middleware('auth:api')->group(function () {
         Route::post('/auth/logout', [AuthController::class, 'logout']);
@@ -28,5 +37,10 @@ Route::middleware('api')->group(function () {
         Route::get('/leaderboard/global', [LeaderboardController::class, 'global']);
         Route::get('/leaderboard/level', [LeaderboardController::class, 'byLevel']);
         Route::get('/leaderboard/streak', [LeaderboardController::class, 'byStreak']);
+
+        Route::get('/badges/user', [BadgeController::class, 'userBadges']);
+        Route::get('/badges/available', [BadgeController::class, 'availableBadges']);
+
+        Route::get('/resources/submission/{submission}', [ResourceController::class, 'forSubmission']);
     });
 });
