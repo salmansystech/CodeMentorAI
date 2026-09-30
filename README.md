@@ -1,18 +1,18 @@
-# 🎓 CodeMentor AI - Intelligent Code Review & Learning Platform
+# CodeMentor AI - Intelligent Code Review & Learning Platform
 
 An **AI-powered code review platform** combining Laravel backend, Vue.js frontend, and Claude AI to provide intelligent code analysis, personalized learning paths, and gamified progress tracking.
 
-## 🎯 Features
+## Features
 
-✅ **AI Code Review** - Claude analyzes code for bugs, style, performance, and security
-✅ **Learning Generator** - AI creates tutorials and explanations
-✅ **Progress Tracking** - Monitor improvement over time
-✅ **Gamification** - Points, badges, leaderboards, streaks
-✅ **Multi-Language** - Python, JavaScript, Java, C++, PHP, Go, Rust, SQL
-✅ **Real-time Dashboard** - Interactive analytics and progress visualization
-✅ **Community Features** - Share reviews, compete on leaderboards
+- **AI Code Review** - Claude analyzes code for bugs, style, performance, and security
+- **Learning Generator** - AI creates tutorials and explanations
+- **Progress Tracking** - Monitor improvement over time
+- **Gamification** - Points, badges, leaderboards, streaks
+- **Multi-Language** - Python, JavaScript, Java, C++, PHP, Go, Rust, SQL
+- **Real-time Dashboard** - Interactive analytics and progress visualization
+- **Community Features** - Share reviews, compete on leaderboards
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CodeMentorAI/
@@ -38,7 +38,7 @@ CodeMentorAI/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Requirements
 - PHP 8.2+
@@ -71,7 +71,7 @@ docker-compose up -d
 # PhpMyAdmin: http://localhost:8080
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication
 ```
@@ -109,7 +109,7 @@ GET    /api/resources/:id          # Get resource
 GET    /api/resources/category/:cat # By category
 ```
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Backend:**
 - Laravel 11 (PHP framework)
@@ -131,7 +131,7 @@ GET    /api/resources/category/:cat # By category
 - MySQL container
 - Redis container
 
-## 🎮 Features Breakdown
+## Features Breakdown
 
 ### Code Review Engine
 - Detects bugs and vulnerabilities
@@ -158,7 +158,7 @@ GET    /api/resources/category/:cat # By category
 - Skill development
 - Issue patterns
 
-## 💾 Database Schema
+## Database Schema
 
 **Users**
 - id, name, email, password_hash
@@ -180,14 +180,14 @@ GET    /api/resources/category/:cat # By category
 - id, user_id, points, badges
 - streak_count, level
 
-## 🔐 Authentication
+## Authentication
 
 Uses JWT tokens for stateless API authentication:
 ```
 Authorization: Bearer <token>
 ```
 
-## 📊 Example Workflow
+## Example Workflow
 
 1. User signs up and chooses language
 2. Uploads or pastes code
@@ -198,7 +198,7 @@ Authorization: Bearer <token>
 7. Dashboard shows progress
 8. Leaderboard updates
 
-## 🚢 Deployment
+## Deployment
 
 ### Deploy Backend
 ```bash
@@ -219,7 +219,7 @@ vercel deploy
 netlify deploy --prod
 ```
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Video tutorials
 - [ ] Mobile app
@@ -228,14 +228,14 @@ netlify deploy --prod
 - [ ] API for third-party integrations
 - [ ] Certification system
 
-## 📄 License
+## License
 
 MIT License
 
-## 👨‍💻 Author
+## Author
 
 **Salman Khan** - [GitHub](https://github.com/salmansystech)
 
 ---
 
-**Learn to code better. One review at a time.** 🚀
+Learn to code better. One review at a time.
